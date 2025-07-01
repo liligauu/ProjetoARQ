@@ -1,0 +1,10 @@
+addi $a0, $zero, 4     
+addi $a1, $zero, 10     
+slt $a2, $a0, $a1      
+slt $a3, $a1, $a0      
+slti $v0, $a0, 5        
+slti $v1, $a1, 5       
+print $a2
+print $a3
+print $v0
+print $v1

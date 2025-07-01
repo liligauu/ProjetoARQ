@@ -1,0 +1,7 @@
+lui $s0, 1             
+addi $s1, $zero, 10     
+sw $s1, 0($s0)        
+lw $s2, 0($s0)        
+print $s0
+print $s1
+print $s2
