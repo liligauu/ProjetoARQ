@@ -75,7 +75,8 @@ class MIPSSimulator:
             instr = self.program[self.pc]
             self.console.insert(tk.END, f"> {instr}\n")
             result = self.run_instruction(instr)
-            self.console.insert(tk.END, result + "\n")
+            if "print" in instr:
+                self.console.insert(tk.END, result + "\n")
             self.console.see(tk.END)
             self.pc += 1
             self.update_register_display()
